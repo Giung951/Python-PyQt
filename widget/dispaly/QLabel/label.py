@@ -11,7 +11,7 @@ form_class = uic.loadUiType("label.ui")[0]
 
 class WindowClass(QMainWindow, form_class):
     """
-    windows popup window with 1 label & 2 buttons class
+    Windows popup window with 1 label and 2 buttons class
     """
     def __init__(self):
         super().__init__()
@@ -24,13 +24,13 @@ class WindowClass(QMainWindow, form_class):
         """
         Change label when 'Change Text' button is pressed
         """
-        self.label.setText("This is Label - Change Text")
+        self.label_text.setText("This is Label - Change Text")
 
     def print_text_function(self):
         """
         Output message when 'Print Text' button is pressed
         """
-        print(self.label.text())
+        print(self.label_text.text())
 
 
 if __name__ == "__main__":

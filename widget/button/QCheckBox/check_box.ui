@@ -13,17 +13,17 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <widget class="QCheckBox" name="checkBox_check3">
+  <widget class="QCheckBox" name="checkBox_check1">
    <property name="geometry">
     <rect>
      <x>50</x>
-     <y>142</y>
+     <y>100</y>
      <width>95</width>
      <height>20</height>
     </rect>
    </property>
    <property name="text">
-    <string>Check3</string>
+    <string>Check1</string>
    </property>
   </widget>
   <widget class="QCheckBox" name="checkBox_check2">
@@ -39,6 +39,19 @@
     <string>Check2</string>
    </property>
   </widget>
+  <widget class="QCheckBox" name="checkBox_check3">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>142</y>
+     <width>95</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Check3</string>
+   </property>
+  </widget>
   <widget class="QCheckBox" name="checkBox_check4">
    <property name="geometry">
     <rect>
@@ -50,19 +63,6 @@
    </property>
    <property name="text">
     <string>Check4</string>
-   </property>
-  </widget>
-  <widget class="QCheckBox" name="checkBox_check1">
-   <property name="geometry">
-    <rect>
-     <x>50</x>
-     <y>100</y>
-     <width>95</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Check1</string>
    </property>
   </widget>
   <widget class="QGroupBox" name="groupBox">
@@ -77,19 +77,6 @@
    <property name="title">
     <string>Group Box</string>
    </property>
-   <widget class="QCheckBox" name="groupBox_checkBox_check3">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>71</y>
-      <width>120</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Check3</string>
-    </property>
-   </widget>
    <widget class="QCheckBox" name="groupBox_checkBox_check1">
     <property name="geometry">
      <rect>
@@ -103,19 +90,6 @@
      <string>Check1</string>
     </property>
    </widget>
-   <widget class="QCheckBox" name="groupBox_checkBox_check4">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>92</y>
-      <width>120</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Check4</string>
-    </property>
-   </widget>
    <widget class="QCheckBox" name="groupBox_checkBox_check2">
     <property name="geometry">
      <rect>
@@ -127,6 +101,32 @@
     </property>
     <property name="text">
      <string>Check2</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="groupBox_checkBox_check3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>71</y>
+      <width>120</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Check3</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="groupBox_checkBox_check4">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>92</y>
+      <width>120</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Check4</string>
     </property>
    </widget>
   </widget>

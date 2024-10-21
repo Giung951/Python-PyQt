@@ -11,7 +11,7 @@ form_class = uic.loadUiType("check_box.ui")[0]
 
 class WindowClass(QMainWindow, form_class):
     """
-    windows popup window with 4 check boxes & 1 group box containing 4 check boxes class
+    Windows popup window with 4 check boxes and 1 group box containing 4 check boxes class
     """
     def __init__(self):
         super().__init__()

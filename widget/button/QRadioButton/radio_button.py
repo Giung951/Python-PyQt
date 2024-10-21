@@ -11,7 +11,7 @@ form_class = uic.loadUiType("radio_button.ui")[0]
 
 class WindowClass(QMainWindow, form_class):
     """
-    windows popup window with 1 group box containing 4 radio buttons class
+    Windows popup window with 1 group box containing 4 radio buttons class
     """
     def __init__(self):
         super().__init__()
