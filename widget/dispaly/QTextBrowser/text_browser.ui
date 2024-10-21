@@ -6,51 +6,58 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>410</width>
+    <height>228</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <widget class="QGroupBox" name="groupBox">
+  <widget class="QTextBrowser" name="textbrow_Test">
    <property name="geometry">
     <rect>
-     <x>130</x>
-     <y>60</y>
-     <width>131</width>
-     <height>158</height>
+     <x>10</x>
+     <y>20</y>
+     <width>256</width>
+     <height>192</height>
     </rect>
    </property>
-   <property name="title">
-    <string>Group Box</string>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>50</y>
+     <width>116</width>
+     <height>134</height>
+    </rect>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout">
     <item>
-     <widget class="QRadioButton" name="groupBox_radioButton_radio1">
+     <widget class="QPushButton" name="pushButton_printText">
       <property name="text">
-       <string>Radio1</string>
+       <string>Print Text</string>
       </property>
      </widget>
     </item>
     <item>
-     <widget class="QRadioButton" name="groupBox_radioButton_radio2">
+     <widget class="QPushButton" name="pushButton_setText">
       <property name="text">
-       <string>Radio2</string>
+       <string>Set Text</string>
       </property>
      </widget>
     </item>
     <item>
-     <widget class="QRadioButton" name="groupBox_radioButton_radio3">
+     <widget class="QPushButton" name="pushButton_appendText">
       <property name="text">
-       <string>Radio3</string>
+       <string>Append Text</string>
       </property>
      </widget>
     </item>
     <item>
-     <widget class="QRadioButton" name="groupBox_radioButton_radio4">
+     <widget class="QPushButton" name="pushButton_clearText">
       <property name="text">
-       <string>Radio4</string>
+       <string>Clear Text</string>
       </property>
      </widget>
     </item>

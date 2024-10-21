@@ -17,18 +17,18 @@ class WindowClass(QMainWindow, form_class):
         super().__init__()
         self.setupUi(self)
 
-        self.button1.clicked.connect(self.button1_function)
-        self.button2.clicked.connect(self.button2_function)
+        self.pushButton_button1.clicked.connect(self.button1_function)
+        self.pushButton_button2.clicked.connect(self.button2_function)
 
     def button1_function(self):
         """
-        Output message when button1 is pressed
+        Output message when 'Button1' button is pressed
         """
         print("Button1 Clicked")
 
     def button2_function(self):
         """
-        Output message when button2 is pressed
+        Output message when 'Button1' button is pressed
         """
         print("Button2 Clicked")
 
