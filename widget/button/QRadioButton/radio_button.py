@@ -17,23 +17,23 @@ class WindowClass(QMainWindow, form_class):
         super().__init__()
         self.setupUi(self)
 
-        self.groupBox_radioButton_radio1.clicked.connect(self.groupbox_radio_function)
-        self.groupBox_radioButton_radio2.clicked.connect(self.groupbox_radio_function)
-        self.groupBox_radioButton_radio3.clicked.connect(self.groupbox_radio_function)
-        self.groupBox_radioButton_radio4.clicked.connect(self.groupbox_radio_function)
+        self.groupBox_radioButton_radio1.clicked.connect(self.group_box_radio_button)
+        self.groupBox_radioButton_radio2.clicked.connect(self.group_box_radio_button)
+        self.groupBox_radioButton_radio3.clicked.connect(self.group_box_radio_button)
+        self.groupBox_radioButton_radio4.clicked.connect(self.group_box_radio_button)
 
-    def groupbox_radio_function(self):
+    def group_box_radio_button(self):
         """
-        Output message when each radio button is pressed
+        Output message when each radio button is checked
         """
         if self.groupBox_radioButton_radio1.isChecked():
-            print("Group Box Radio1 Chekced")
+            print("Radio1 Chekced")
         elif self.groupBox_radioButton_radio2.isChecked():
-            print("Group Box Radio2 Checked")
+            print("Radio2 Checked")
         elif self.groupBox_radioButton_radio3.isChecked():
-            print("Group Box Radio3 Checked")
+            print("Radio3 Checked")
         elif self.groupBox_radioButton_radio4.isChecked():
-            print("Group Box Radio4 Checked")
+            print("Radio4 Checked")
 
 
 if __name__ == "__main__":

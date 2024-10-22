@@ -17,20 +17,19 @@ class WindowClass(QMainWindow, form_class):
         super().__init__()
         self.setupUi(self)
 
-        self.pushButton_button1.clicked.connect(self.button1_function)
-        self.pushButton_button2.clicked.connect(self.button2_function)
+        self.pushButton_button1.clicked.connect(self.push_button)
+        self.pushButton_button2.clicked.connect(self.push_button)
 
-    def button1_function(self):
+    def push_button(self):
         """
-        Output message when 'Button1' button is pressed
+        Output message when each button is pressed
         """
-        print("Button1 Clicked")
+        push_button_is_pressed = self.sender()
 
-    def button2_function(self):
-        """
-        Output message when 'Button1' button is pressed
-        """
-        print("Button2 Clicked")
+        if push_button_is_pressed == self.pushButton_button1:
+            print("Button1 Clicked")
+        elif push_button_is_pressed == self.pushButton_button2:
+            print("Button2 Clicked")
 
 
 if __name__ == "__main__":

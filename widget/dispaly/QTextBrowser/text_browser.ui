@@ -6,14 +6,14 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>410</width>
+    <width>421</width>
     <height>228</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <widget class="QTextBrowser" name="textbrow_Test">
+  <widget class="QTextBrowser" name="textBrowser_text">
    <property name="geometry">
     <rect>
      <x>10</x>
@@ -28,36 +28,36 @@
     <rect>
      <x>280</x>
      <y>50</y>
-     <width>116</width>
+     <width>134</width>
      <height>134</height>
     </rect>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout">
     <item>
-     <widget class="QPushButton" name="pushButton_printText">
+     <widget class="QPushButton" name="pushButton_printTextBrowser">
       <property name="text">
-       <string>Print Text</string>
+       <string>Print Text Browser</string>
       </property>
      </widget>
     </item>
     <item>
-     <widget class="QPushButton" name="pushButton_setText">
+     <widget class="QPushButton" name="pushButton_setTextBrowser">
       <property name="text">
-       <string>Set Text</string>
+       <string>Set Text Browser</string>
       </property>
      </widget>
     </item>
     <item>
-     <widget class="QPushButton" name="pushButton_appendText">
+     <widget class="QPushButton" name="pushButton_appendTextBrowser">
       <property name="text">
-       <string>Append Text</string>
+       <string>Append Text Browser</string>
       </property>
      </widget>
     </item>
     <item>
-     <widget class="QPushButton" name="pushButton_clearText">
+     <widget class="QPushButton" name="pushButton_clearTextBrowser">
       <property name="text">
-       <string>Clear Text</string>
+       <string>Clear Text Browser</string>
       </property>
      </widget>
     </item>

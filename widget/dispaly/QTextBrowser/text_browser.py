@@ -17,34 +17,34 @@ class WindowClass(QMainWindow, form_class):
         super().__init__()
         self.setupUi(self)
 
-        self.pushButton_printText.clicked.connect(self.print_text_function)
-        self.pushButton_setText.clicked.connect(self.change_text_function)
-        self.pushButton_appendText.clicked.connect(self.append_text_function)
-        self.pushButton_clearText.clicked.connect(self.clear_text_function)
+        self.pushButton_printTextBrowser.clicked.connect(self.print_text_browser)
+        self.pushButton_setTextBrowser.clicked.connect(self.set_text_browser)
+        self.pushButton_appendTextBrowser.clicked.connect(self.append_text_browser)
+        self.pushButton_clearTextBrowser.clicked.connect(self.clear_text_browser)
 
-    def print_text_function(self):
+    def print_text_browser(self):
         """
-        Get the text written in text browser when 'Print Text' button is pressed
+        Output the text in text browser when 'Print Text Browser' button is pressed
         """
-        print(self.textbrow_Test.toPlainText())
+        print(self.textBrowser_text.toPlainText())
 
-    def change_text_function(self):
+    def set_text_browser(self):
         """
-        Set a new text in text browser when 'Set Text' button is pressed
+        Set a new text in text browser when 'Set Text Browser' button is pressed
         """
-        self.textbrow_Test.setPlainText("This is Text Browser - Change Text")
+        self.textBrowser_text.setPlainText("This is Text Browser - Change Text")
 
-    def append_text_function(self):
+    def append_text_browser(self):
         """
-        Add a text in text browser when 'Append Text' button is pressed
+        Add the specific text in text browser when 'Append Text Browser' button is pressed
         """
-        self.textbrow_Test.append("Append Text")
+        self.textBrowser_text.append("Append Text")
 
-    def clear_text_function(self):
+    def clear_text_browser(self):
         """
-        Clear the text written in text browser when 'Clear Text' button is pressed
+        Clear the text in text browser when 'Clear Text Browser' button is pressed
         """
-        self.textbrow_Test.clear()
+        self.textBrowser_text.clear()
 
 
 if __name__ == "__main__":

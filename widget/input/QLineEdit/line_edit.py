@@ -11,29 +11,29 @@ form_class = uic.loadUiType("line_edit.ui")[0]
 
 class WindowClass(QMainWindow, form_class):
     """
-    Windows popup window with 1 label, 2 line edit and push button class
+    Windows popup window with 1 label, 1 line edit and 1 push button class
     """
     def __init__(self):
         super().__init__()
         self.setupUi(self)
 
-        self.lineEdit_line.textChanged.connect(self.line_edit_text_function)
-        self.lineEdit_line.returnPressed.connect(self.print_text_function)
-        self.pushButton_changeText.clicked.connect(self.change_text_function)
+        self.lineEdit_line.textChanged.connect(self.line_edit_to_label)
+        self.lineEdit_line.returnPressed.connect(self.print_line_edit)
+        self.pushButton_changeText.clicked.connect(self.change_line_edit)
 
-    def line_edit_text_function(self):
+    def line_edit_to_label(self):
         """
-        Input text using line edit and output the input text
+        Input the text in line edit and output the input text in label
         """
         self.label_text.setText(self.lineEdit_line.text())
 
-    def print_text_function(self):
+    def print_line_edit(self):
         """
-        When enter is pressed, output the input text using line edit
+        Output the input text in line edit when enter is pressed
         """
         print(self.lineEdit_line.text())
 
-    def change_text_function(self):
+    def change_line_edit(self):
         """
         Change the text in line edit
         """

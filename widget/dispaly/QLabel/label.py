@@ -17,18 +17,18 @@ class WindowClass(QMainWindow, form_class):
         super().__init__()
         self.setupUi(self)
 
-        self.pushButton_changeText.clicked.connect(self.change_text_function)
-        self.pushButton_printText.clicked.connect(self.print_text_function)
+        self.pushButton_changeLabel.clicked.connect(self.change_label)
+        self.pushButton_printLabel.clicked.connect(self.print_label)
 
-    def change_text_function(self):
+    def change_label(self):
         """
-        Change label when 'Change Text' button is pressed
+        Change label when 'Change Label' button is pressed
         """
         self.label_text.setText("This is Label - Change Text")
 
-    def print_text_function(self):
+    def print_label(self):
         """
-        Output message when 'Print Text' button is pressed
+        Output message when 'Print Label' button is pressed
         """
         print(self.label_text.text())
 

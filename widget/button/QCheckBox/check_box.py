@@ -17,17 +17,17 @@ class WindowClass(QMainWindow, form_class):
         super().__init__()
         self.setupUi(self)
 
-        self.checkBox_check1.stateChanged.connect(self.check_function)
-        self.checkBox_check2.stateChanged.connect(self.check_function)
-        self.checkBox_check3.stateChanged.connect(self.check_function)
-        self.checkBox_check4.stateChanged.connect(self.check_function)
+        self.checkBox_check1.stateChanged.connect(self.check_box)
+        self.checkBox_check2.stateChanged.connect(self.check_box)
+        self.checkBox_check3.stateChanged.connect(self.check_box)
+        self.checkBox_check4.stateChanged.connect(self.check_box)
 
-        self.groupBox_checkBox_check1.stateChanged.connect(self.groupbox_check_function)
-        self.groupBox_checkBox_check2.stateChanged.connect(self.groupbox_check_function)
-        self.groupBox_checkBox_check3.stateChanged.connect(self.groupbox_check_function)
-        self.groupBox_checkBox_check4.stateChanged.connect(self.groupbox_check_function)
+        self.groupBox_checkBox_check1.stateChanged.connect(self.group_box_check_box)
+        self.groupBox_checkBox_check2.stateChanged.connect(self.group_box_check_box)
+        self.groupBox_checkBox_check3.stateChanged.connect(self.group_box_check_box)
+        self.groupBox_checkBox_check4.stateChanged.connect(self.group_box_check_box)
 
-    def check_function(self):
+    def check_box(self):
         """
         Output message when each check box is checked
         """
@@ -40,18 +40,18 @@ class WindowClass(QMainWindow, form_class):
         if self.checkBox_check4.isChecked():
             print("Check4 Checked")
 
-    def groupbox_check_function(self):
+    def group_box_check_box(self):
         """
         Output message when each check box is checked
         """
         if self.groupBox_checkBox_check1.isChecked():
-            print("Group Box Check1 Checked")
+            print("Check1 Checked")
         if self.groupBox_checkBox_check2.isChecked():
-            print("Group Box Check2 Checked")
+            print("Check2 Checked")
         if self.groupBox_checkBox_check3.isChecked():
-            print("Group Box Check3 Checked")
+            print("Check3 Checked")
         if self.groupBox_checkBox_check4.isChecked():
-            print("Group Box Check4 Checked")
+            print("Check4 Checked")
 
 
 if __name__ == "__main__":
